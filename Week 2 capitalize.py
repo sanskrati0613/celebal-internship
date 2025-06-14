@@ -38,3 +38,28 @@ if __name__ == '__main__':
 INPUT = 10
 161 182 161 154 176 170 167 171 170 174
 OUTPUT = 169.375
+
+
+Task 3 = https://www.hackerrank.com/challenges/text-wrap/problem?isFullScreen=true
+
+import textwrap
+
+def wrap(string, max_width):
+    return '\n'.join(textwrap.wrap(string, max_width))
+
+if __name__ == '__main__':
+    string = input("Enter a string: ")
+    max_width = int(input("Enter the maximum width: "))
+    result = wrap(string, max_width)
+    print(result)
+
+INPUT = ABCDEFGHIJKLIMNOQRSTUVWXYZ
+4
+OUTPUT = ABCD
+EFGH
+IJKL
+IMNO
+QRST
+UVWX
+YZ
+
